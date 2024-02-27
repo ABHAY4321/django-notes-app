@@ -22,6 +22,7 @@ docker build -t notes-app .
 docker run -d -p 8000:8000 notes-app:latest
 ```
 
+## Use path "mynotes/build/index.html" to change the App name.
 ## Nginx
 
 Install Nginx reverse proxy to make this application available
