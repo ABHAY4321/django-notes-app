@@ -2,6 +2,11 @@ pipeline {
     agent { label "dev-agent" }
     
     stages {
+        stage("Check which user is running this Job"){
+            steps{
+                sh 'whoami'
+            }
+        }
         stage("Code"){
             steps{
                 git url: "https://github.com/ABHAY4321/django-notes-app.git", branch: "main"
